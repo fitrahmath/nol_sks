@@ -1,177 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Academic profile of Muh. Fitrah" />
-  <title>Muh. Fitrah | Academic Profile</title>
-  <style>
-    :root {
-      --bg: #f7f8fa;
-      --card: #ffffff;
-      --text: #172033;
-      --muted: #667085;
-      --line: #e5e7eb;
-      --accent: #1f4f82;
-      --accent-soft: #eef4fb;
-      --maxw: 920px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
-    .wrap {
-      width: min(calc(100% - 32px), var(--maxw));
-      margin: 0 auto;
-    }
-    header {
-      padding: 72px 0 36px;
-    }
-    .hero {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 42px;
-      box-shadow: 0 10px 35px rgba(16,24,40,.06);
-    }
-    .eyebrow {
-      color: var(--accent);
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      font-size: .78rem;
-      margin-bottom: 8px;
-    }
-    h1 {
-      margin: 0;
-      font-size: clamp(2.2rem, 6vw, 4.2rem);
-      line-height: 1.05;
-      letter-spacing: -0.045em;
-    }
-    .role {
-      margin-top: 14px;
-      font-size: 1.08rem;
-      color: var(--muted);
-    }
-    .profiles {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 28px;
-    }
-    .profiles a {
-      display: inline-flex;
-      align-items: center;
-      text-decoration: none;
-      color: var(--accent);
-      background: var(--accent-soft);
-      border: 1px solid #dce8f5;
-      padding: 10px 14px;
-      border-radius: 999px;
-      font-weight: 650;
-      font-size: .94rem;
-      transition: .18s ease;
-    }
-    .profiles a:hover {
-      transform: translateY(-1px);
-      background: #e3eef9;
-    }
-    main {
-      padding-bottom: 72px;
-    }
-    section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 32px;
-      margin-top: 18px;
-    }
-    h2 {
-      font-size: 1.28rem;
-      margin: 0 0 14px;
-      letter-spacing: -.02em;
-    }
-    p { margin: 0; }
-    .interests {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      margin-top: 8px;
-    }
-    .tag {
-      border: 1px solid var(--line);
-      background: #fafafa;
-      border-radius: 999px;
-      padding: 8px 12px;
-      color: #344054;
-      font-size: .92rem;
-    }
-    footer {
-      color: var(--muted);
-      text-align: center;
-      padding: 0 0 40px;
-      font-size: .88rem;
-    }
-    @media (max-width: 640px) {
-      header { padding-top: 28px; }
-      .hero, section { padding: 24px; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Academic profile of Muh. Fitrah, Assistant Professor and Doctoral Researcher in Educational Research and Evaluation.">
+<title>Muh. Fitrah | Academic Profile</title>
+<style>
+:root{
+  --bg:#070a08; --panel:#0e1310; --panel2:#121813; --text:#f3f6f2; --muted:#aab5ac;
+  --green:#8fd14f; --green2:#66b82d; --line:#263128; --shadow:0 18px 48px rgba(0,0,0,.28);
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 15% 0%,rgba(100,184,45,.16),transparent 28%),var(--bg);
+color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit}
+.wrap{width:min(calc(100% - 32px),var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,10,8,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navin{height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-size:1.25rem;font-weight:800;letter-spacing:-.02em}.brand span{color:var(--green)}
+.menu{display:flex;gap:24px;flex-wrap:wrap}.menu a{text-decoration:none;color:#d9e0da;font-size:.93rem}.menu a:hover{color:var(--green)}
+.hero{padding:54px 0 26px}
+.hero-grid{display:grid;grid-template-columns:300px 1fr;gap:54px;align-items:center}
+.portrait{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:24px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.kicker{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}
+h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.98;margin:10px 0 22px;letter-spacing:-.06em}
+.role{display:grid;gap:16px;margin:0 0 22px}
+.role strong{font-size:1.12rem}.role span{display:block;color:var(--green);font-size:.95rem}
+.summary{max-width:760px;color:#d3dad4;font-size:1.02rem}
+.profiles{margin:28px 0 0;background:linear-gradient(180deg,#111713,#0b0f0c);border:1px solid var(--line);border-radius:22px;padding:16px;
+display:grid;grid-template-columns:repeat(6,1fr);gap:8px;box-shadow:var(--shadow)}
+.profile-card{min-height:118px;border-right:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;padding:10px;text-align:center}
+.profile-card:last-child{border-right:0}.profile-card:hover{background:#141c15;border-radius:14px}
+.profile-card img{height:46px;max-width:92px;object-fit:contain;margin-bottom:8px}
+.profile-card span{font-size:.87rem;font-weight:700}.profile-card small{color:var(--green);font-size:.72rem;margin-top:2px}
+section{scroll-margin-top:88px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow)}
+.card h2,.wide h2{margin:0 0 16px;font-size:1.35rem;letter-spacing:-.03em}
+.card h2:before,.wide h2:before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--green);margin-right:10px}
+.card p{color:#d1d8d2;margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:9px}.tag{padding:9px 12px;border:1px solid #314033;border-radius:999px;background:#0b100c;color:#e4eae5;font-size:.86rem}
+.timeline{display:grid;gap:17px}
+.item{padding-left:18px;border-left:2px solid #42632f;position:relative}.item:before{content:"";position:absolute;left:-6px;top:7px;width:10px;height:10px;background:var(--green);border-radius:50%}
+.item strong{display:block}.item .meta{color:var(--green);font-size:.9rem}.item .year{color:#a8b1aa;font-size:.85rem}
+.wide{margin-top:18px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow)}
+.expertise{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 22px}.expertise div{padding:10px 0;border-bottom:1px solid var(--line);color:#d8dfd9}
+.pub{padding:18px 0;border-bottom:1px solid var(--line)}.pub:last-child{border-bottom:0}.pub-title{font-weight:750;line-height:1.45}.pub-meta{color:var(--green);font-size:.9rem;margin-top:5px}.status{display:inline-block;margin-top:7px;padding:4px 9px;border:1px solid #426b2c;border-radius:999px;color:#a7df73;font-size:.76rem}
+.reviewer-list{columns:2;column-gap:28px;margin:0;padding-left:20px;color:#d2d9d3}.reviewer-list li{margin:8px 0;break-inside:avoid}
+.scholarship{display:flex;gap:18px;align-items:flex-start}.badge{min-width:58px;height:58px;border-radius:16px;background:#162315;border:1px solid #38502d;display:grid;place-items:center;color:var(--green);font-weight:900}
+footer{margin-top:20px;border-top:1px solid var(--line);padding:34px 0 44px;color:#9eaaa0}.footer-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.contact a{color:#dfe6e0;text-decoration:none}.contact a:hover{color:var(--green)}
+@media(max-width:900px){
+  .menu{display:none}.hero-grid{grid-template-columns:1fr}.portrait{max-width:300px}.profiles{grid-template-columns:repeat(3,1fr)}
+  .profile-card:nth-child(3){border-right:0}.grid2{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .hero{padding-top:30px}.profiles{grid-template-columns:repeat(2,1fr)}.profile-card{border-right:0;border-bottom:1px solid var(--line)}
+  .profile-card:nth-last-child(-n+2){border-bottom:0}.expertise{grid-template-columns:1fr}.reviewer-list{columns:1}h1{font-size:3.3rem}
+}
+</style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <div class="hero">
-        <div class="eyebrow">Academic Profile</div>
+<nav>
+  <div class="wrap navin">
+    <div class="brand">Muh. <span>Fitrah</span></div>
+    <div class="menu">
+      <a href="#about">About</a><a href="#education">Education</a><a href="#expertise">Expertise</a>
+      <a href="#publications">Publications</a><a href="#reviewer">Reviewer</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <img class="portrait" src="assets/profile.jpg" alt="Portrait of Muh. Fitrah">
+      <div>
+        <div class="kicker">Academic Profile</div>
         <h1>Muh. Fitrah</h1>
         <div class="role">
-          Assistant Professor (Lektor), Universitas Muhammadiyah Bima<br>
-          Doctoral Researcher, Universitas Negeri Yogyakarta
+          <div><strong>Assistant Professor</strong><span>Department of Mathematics Education · Universitas Muhammadiyah Bima, Indonesia</span></div>
+          <div><strong>Doctoral Researcher</strong><span>Department of Educational Research and Evaluation · Graduate School, Universitas Negeri Yogyakarta, Indonesia</span></div>
         </div>
-
-        <div class="profiles" aria-label="Academic profiles">
-          <a href="https://orcid.org/0000-0003-2189-5256" target="_blank" rel="noopener">ORCID</a>
-          <a href="https://scholar.google.co.id/citations?user=aN5H7yEAAAAJ&hl=id" target="_blank" rel="noopener">Google Scholar</a>
-          <a href="https://www.researchgate.net/profile/Muh_Fitrah" target="_blank" rel="noopener">ResearchGate</a>
-          <a href="http://www.scopus.com/inward/authorDetails.url?authorID=59203032600&partnerID=MN8TOARS" target="_blank" rel="noopener">Scopus</a>
-          <a href="https://sciprofiles.com/profile/3077414" target="_blank" rel="noopener">SciProfiles</a>
-          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+        <div class="summary">Researcher in teacher professional development, professional judgement, adaptive teaching, mathematics education, educational assessment and evaluation, mixed methods research, technology-enhanced learning, and rural education.</div>
       </div>
     </div>
-  </header>
 
-  <main class="wrap">
-    <section id="profile">
+    <div class="profiles" aria-label="Academic profile links">
+      <a class="profile-card" href="https://orcid.org/0000-0003-2189-5256" target="_blank" rel="noopener"><img src="assets/orcid.png" alt="ORCID"><span>ORCID</span><small>View profile</small></a>
+      <a class="profile-card" href="https://scholar.google.co.id/citations?user=aN5H7yEAAAAJ&hl=id" target="_blank" rel="noopener"><img src="assets/scholar.png" alt="Google Scholar"><span>Google Scholar</span><small>View profile</small></a>
+      <a class="profile-card" href="https://www.researchgate.net/profile/Muh_Fitrah" target="_blank" rel="noopener"><img src="assets/researchgate.png" alt="ResearchGate"><span>ResearchGate</span><small>View profile</small></a>
+      <a class="profile-card" href="http://www.scopus.com/inward/authorDetails.url?authorID=59203032600&partnerID=MN8TOARS" target="_blank" rel="noopener"><img src="assets/scopus.png" alt="Scopus"><span>Scopus</span><small>Author ID 59203032600</small></a>
+      <a class="profile-card" href="https://sciprofiles.com/profile/3077414" target="_blank" rel="noopener"><img src="assets/sciprofiles.png" alt="SciProfiles"><span>SciProfiles</span><small>View profile</small></a>
+      <a class="profile-card" href="https://www.linkedin.com/in/muh-fitrah-b8735615b/" target="_blank" rel="noopener"><img src="assets/linkedin.png" alt="LinkedIn"><span>LinkedIn</span><small>View profile</small></a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid2">
+    <section class="card" id="about">
       <h2>Professional Profile</h2>
-      <p>
-        Muh. Fitrah is an Assistant Professor (Lektor) at Universitas Muhammadiyah Bima
-        and is currently a Doctoral Researcher in Educational Research and Evaluation
-        at Universitas Negeri Yogyakarta. His research focuses on educational measurement
-        and evaluation, research methodology, and instrument development.
-      </p>
+      <p>Muh. Fitrah is an Assistant Professor in the Department of Mathematics Education at Universitas Muhammadiyah Bima, Indonesia, and is currently pursuing a doctoral degree in Educational Research and Evaluation at the Graduate School of Universitas Negeri Yogyakarta.</p>
+      <p style="margin-top:14px">His work aims to strengthen educational theory, advance research methodology, foster instructional innovation, and promote evidence-informed educational practice.</p>
     </section>
 
-    <section id="research-interests">
+    <section class="card">
       <h2>Research Interests</h2>
-      <div class="interests">
-        <span class="tag">Educational Measurement</span>
-        <span class="tag">Educational Evaluation</span>
-        <span class="tag">Research Methodology</span>
-        <span class="tag">Instrument Development</span>
+      <div class="tags">
+        <span class="tag">Teacher Professional Development</span><span class="tag">Professional Judgement</span><span class="tag">Adaptive Teaching</span>
+        <span class="tag">Mathematics Education</span><span class="tag">Assessment & Evaluation</span><span class="tag">Mixed Methods Research</span>
+        <span class="tag">Constructivist Grounded Theory</span><span class="tag">Technology-Enhanced Learning</span><span class="tag">Rural Education</span>
+        <span class="tag">Rural Curriculum Development</span>
       </div>
     </section>
-  </main>
+  </div>
 
-  <footer>
-    <div class="wrap">
-      © Muh. Fitrah · Academic Profile
+  <div class="grid2">
+    <section class="card" id="education">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="item"><strong>Doctoral Researcher — Educational Research and Evaluation</strong><div class="meta">Graduate School, Universitas Negeri Yogyakarta</div><div class="year">2023–Present</div></div>
+        <div class="item"><strong>M.Ed. in Mathematics Education</strong><div class="meta">Universitas Muhammadiyah Malang</div><div class="year">2016</div></div>
+        <div class="item"><strong>B.Ed. in Mathematics Education</strong><div class="meta">IKIP Mataram (now Universitas Pendidikan Mandalika)</div><div class="year">2014</div></div>
+      </div>
+    </section>
+
+    <section class="card" id="expertise">
+      <h2>Research Expertise</h2>
+      <div class="expertise">
+        <div>Educational Research and Evaluation</div><div>Instrument Development and Validation</div>
+        <div>Rasch Measurement Theory</div><div>Exploratory Factor Analysis</div>
+        <div>Multiple Regression Analysis</div><div>Mixed Methods Research</div>
+        <div>Constructivist Grounded Theory</div><div>Evidence Synthesis & Design-Based Research</div>
+      </div>
+    </section>
+  </div>
+
+  <section class="wide">
+    <h2>Research Experience</h2>
+    <div class="expertise">
+      <div>Educational assessment, evaluation, mathematics education, and research methodology</div>
+      <div>Instrument development and validation using Rasch, factor analysis, and mixed methods</div>
+      <div>Conceptual and methodological framework development through grounded theory and evidence synthesis</div>
+      <div>Technology-enhanced learning, teacher professionalism, rural curriculum, and methodological innovation</div>
     </div>
-  </footer>
+  </section>
+
+  <section class="wide" id="publications">
+    <h2>Scopus-Indexed Publications</h2>
+
+    <div class="pub"><div class="pub-title">The construct of mathematics learning technology with multidimensional resource constraints: A constructivist grounded theory</div><div class="pub-meta">Forum Qualitative Sozialforschung · 2026 · 27(1), Article 11</div></div>
+    <div class="pub"><div class="pub-title">Are teachers ready to adopt deep learning pedagogy? The role of technology and 21st-century competencies amid educational policy reform</div><div class="pub-meta">Education Sciences · 2025 · 15(10), 1344</div></div>
+    <div class="pub"><div class="pub-title">The impact of integrated project-based learning and flipped classroom on students' computational thinking skills: Embedded mixed methods</div><div class="pub-meta">Education Sciences · 2025 · 15(4), 448</div></div>
+    <div class="pub"><div class="pub-title">Impact of learning management systems and digital skills on TPACK development among pre-service mathematics teachers</div><div class="pub-meta">Qubahan Academic Journal · 2025 · 5(1), 504–518</div></div>
+    <div class="pub"><div class="pub-title">Quantifying the relationship between self-efficacy and mathematical creativity: A meta-analysis</div><div class="pub-meta">Education Sciences · 2024 · 14(11), 1251</div></div>
+    <div class="pub"><div class="pub-title">Evaluation of digital technology management in mathematics learning: A sequential explanatory design in Eastern Indonesia</div><div class="pub-meta">Nordic Journal of Comparative and International Education · 2024 · 8(3)</div></div>
+    <div class="pub"><div class="pub-title">Reliability and separation index analysis of mathematics questions integrated with the cultural architecture framework using the Rasch model</div><div class="pub-meta">Journal of Education and e-Learning Research · 2024 · 11(3), 499–509</div></div>
+    <div class="pub"><div class="pub-title">Orchestrated blended-distributed mathematics learning to enhance mathematics achievement and collaboration skills</div><div class="pub-meta">The International Review of Research in Open and Distributed Learning · In press</div><span class="status">Accepted for publication</span></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card" id="reviewer">
+      <h2>International Journal Reviewer</h2>
+      <ul class="reviewer-list">
+        <li>Education and Information Technologies</li>
+        <li>The International Review of Research in Open and Distributed Learning</li>
+        <li>SAGE Open</li>
+        <li>Eurasia Journal of Mathematics, Science and Technology Education</li>
+        <li>Australian and International Journal of Rural Education</li>
+        <li>Asia Pacific Journal of Educators and Education</li>
+        <li>Nordic Journal of Comparative and International Education</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Scholarship</h2>
+      <div class="scholarship">
+        <div class="badge">BPI</div>
+        <div><strong>Indonesia Education Scholarship (BPI)</strong><p style="margin-top:5px">Ministry of Higher Education, Science and Technology, Republic of Indonesia</p><div style="color:var(--green);margin-top:8px">2023–2027</div></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer id="contact">
+  <div class="wrap footer-grid">
+    <div><strong style="color:#f0f4f0">Muh. Fitrah</strong><br>Academic Profile</div>
+    <div class="contact">
+      <a href="mailto:fitrahmath@gmail.com">fitrahmath@gmail.com</a><br>
+      <a href="mailto:muhfitrah.2023@student.uny.ac.id">muhfitrah.2023@student.uny.ac.id</a>
+    </div>
+    <div>Universitas Muhammadiyah Bima · Universitas Negeri Yogyakarta</div>
+  </div>
+</footer>
 </body>
 </html>
