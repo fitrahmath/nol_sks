@@ -60,6 +60,50 @@ footer{margin-top:20px;border-top:1px solid var(--line);padding:34px 0 44px;colo
   .hero{padding-top:30px}.profiles{grid-template-columns:repeat(2,1fr)}.profile-card{border-right:0;border-bottom:1px solid var(--line)}
   .profile-card:nth-last-child(-n+2){border-bottom:0}.expertise{grid-template-columns:1fr}.reviewer-list{columns:1}h1{font-size:3.3rem}
 }
+
+/* Interactive section-heading effect */
+.card h2,
+.wide h2{
+  position:relative;
+  display:inline-block;
+  transition:color .35s ease, transform .35s ease, text-shadow .35s ease;
+}
+
+.card h2::after,
+.wide h2::after{
+  content:"";
+  position:absolute;
+  left:20px;
+  bottom:-5px;
+  width:0;
+  height:2px;
+  background:var(--green);
+  border-radius:2px;
+  box-shadow:0 0 10px rgba(143,209,79,.35);
+  transition:width .4s ease;
+}
+
+.card:hover h2,
+.wide:hover h2{
+  color:var(--green);
+  transform:translateY(-2px);
+  text-shadow:0 5px 14px rgba(143,209,79,.12);
+}
+
+.card:hover h2::after,
+.wide:hover h2::after{
+  width:calc(100% - 20px);
+}
+
+@media (prefers-reduced-motion: reduce){
+  .card h2,
+  .wide h2,
+  .card h2::after,
+  .wide h2::after{
+    transition:none;
+  }
+}
+
 </style>
 </head>
 <body>
